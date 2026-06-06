@@ -3,3 +3,7 @@ node_modules/
 *.log
 .DS_Store
 Thumbs.db
+guia-instalacao.pdf
+gerar-pdf.js
+package.json
+package-lock.json
