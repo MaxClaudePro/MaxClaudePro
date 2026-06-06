@@ -14,8 +14,8 @@ Não é um software. É um sistema de contexto + comandos prontos que qualquer e
 
 ## Como instalar
 
-1. Instale uma IDE com suporte ao Claude Code (VS Code, Cursor ou Antigravity IDE)
-2. Instale o Claude Code na IDE: [claude.ai/code](https://claude.ai/code)
+1. Instale uma IDE: [VS Code](https://code.visualstudio.com), [Cursor](https://cursor.com) ou Antigravity IDE
+2. Dentro da IDE, instale a extensão **Claude Code** — disponível na aba de extensões ou em [claude.ai/code](https://claude.ai/code)
 3. Cole o comando abaixo no chat do Claude Code:
 
 ```
