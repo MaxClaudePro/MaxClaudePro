@@ -533,6 +533,88 @@
     flex-shrink: 0;
   }
 
+  /* Tip box */
+  .tip-box {
+    background: rgba(255,106,0,0.05);
+    border: 1.5px solid rgba(255,106,0,0.45);
+    border-radius: 14px;
+    padding: 26px 28px;
+    margin: 40px 0;
+    box-shadow: 0 0 32px rgba(255,106,0,0.08);
+  }
+
+  .tip-box-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+
+  .tip-box-icon {
+    width: 30px;
+    height: 30px;
+    background: #FF6A00;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    flex-shrink: 0;
+  }
+
+  .tip-box-title {
+    font-family: 'Sora', sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    color: #FFFFFF;
+    letter-spacing: -0.02em;
+  }
+
+  .tip-box-badge {
+    margin-left: auto;
+    background: #FF6A00;
+    color: #fff;
+    font-family: 'Sora', sans-serif;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 20px;
+    flex-shrink: 0;
+  }
+
+  .tip-box-text {
+    font-size: 13.5px;
+    color: #A0A0A0;
+    line-height: 1.8;
+  }
+
+  .tip-box-text strong { color: #FFFFFF; font-weight: 600; }
+
+  .tip-box-example {
+    margin-top: 14px;
+    background: #161616;
+    border: 1px solid #222;
+    border-radius: 8px;
+    padding: 14px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .tip-folder-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+  }
+
+  .tip-folder-icon { font-size: 14px; }
+  .tip-folder-name { color: #E8A87C; }
+  .tip-folder-desc { color: #3A3A3A; margin-left: 4px; }
+
   /* Divider */
   .divider {
     height: 1px;
@@ -622,7 +704,7 @@
   <!-- Hero -->
   <div class="hero">
     <h1>Pronto pra <span>começar.</span></h1>
-    <p>Siga os 3 passos abaixo e em menos de 10 minutos o MaxClaudePro estará configurado e rodando no seu negócio.</p>
+    <p>Siga os 4 passos abaixo e em menos de 10 minutos o MaxClaudePro estará configurado e rodando no seu negócio.</p>
   </div>
 
   <!-- PASSO 1 -->
@@ -664,33 +746,24 @@
         </a>
       </div>
 
-      <!-- Mockup 1: Download IDE -->
-      <div class="mockup">
-        <div class="mockup-bar">
-          <div class="mockup-dot red"></div>
-          <div class="mockup-dot yellow"></div>
-          <div class="mockup-dot green"></div>
-          <div class="mockup-title">code.visualstudio.com</div>
-        </div>
-        <div class="mockup-body">
-          <div class="dl-site">
-            <div class="dl-site-name">Visual Studio Code</div>
-            <div class="dl-site-sub">Code editing. Redefined.</div>
-            <div class="dl-btn">Download for Windows</div>
-            <div class="dl-note">Free · Built on open source · Runs everywhere</div>
-          </div>
-        </div>
-      </div>
-
       <div class="step-desc" style="margin-top:4px;">
         Depois de instalar, abra a IDE. Você vai ver uma tela em branco — é normal, ainda não tem nenhuma pasta aberta.
       </div>
+    </div>
+  </div>
 
-      <div class="step-desc" style="margin-bottom:16px;">
-        <strong>Agora instale o Claude Code dentro da IDE.</strong> Vá na aba de extensões (ícone de quadradinhos na barra lateral), pesquise por <strong>Claude Code</strong> e instale.
+  <!-- PASSO 2 -->
+  <div class="step">
+    <div class="step-header">
+      <div class="step-number">2</div>
+      <div class="step-title">Instale o Claude Code dentro da IDE</div>
+    </div>
+    <div class="step-body">
+      <div class="step-desc">
+        Com a IDE aberta, vá na <strong>aba de extensões</strong> — é o ícone de quadradinhos na barra lateral esquerda. Pesquise por <strong>Claude Code</strong> e clique em instalar.
       </div>
 
-      <!-- Mockup 2: Extensão Claude Code -->
+      <!-- Mockup: Extensão Claude Code -->
       <div class="mockup">
         <div class="mockup-bar">
           <div class="mockup-dot red"></div>
@@ -727,10 +800,43 @@
     </div>
   </div>
 
-  <!-- PASSO 2 -->
+  <!-- TIP: Crie uma pasta por empresa -->
+  <div class="tip-box">
+    <div class="tip-box-header">
+      <div class="tip-box-icon">⚠️</div>
+      <div class="tip-box-title">Antes de continuar — crie uma pasta no seu computador</div>
+      <div class="tip-box-badge">Não pule</div>
+    </div>
+    <div class="tip-box-text">
+      O MaxClaudePro funciona dentro de uma pasta. <strong>Cada pasta é uma empresa.</strong><br><br>
+      Antes de ir pro Passo 3, crie uma pasta no seu computador com o nome do seu negócio — pode ser na Área de Trabalho mesmo. Depois, abra essa pasta na IDE: vá em <strong>File → Open Folder</strong> e selecione ela.<br><br>
+      Isso é importante porque o MaxClaudePro vai salvar tudo dentro dessa pasta — memória, conteúdo, propostas, tudo. É a "casa" do seu negócio no sistema.<br><br>
+      <strong>Trabalha com mais de um cliente ou empresa?</strong> Simples: crie uma pasta diferente pra cada um, abra na IDE e rode o MaxClaudePro dentro. Cada pasta vai ter o sistema configurado de forma independente, com as informações certas de cada negócio.
+    </div>
+    <div class="tip-box-example">
+      <div style="font-size:10px; font-weight:700; color:#555; letter-spacing:0.15em; text-transform:uppercase; margin-bottom:4px;">Exemplo de organização</div>
+      <div class="tip-folder-row">
+        <span class="tip-folder-icon">📁</span>
+        <span class="tip-folder-name">studio-flora/</span>
+        <span class="tip-folder-desc">— cliente 1 (designer de interiores)</span>
+      </div>
+      <div class="tip-folder-row">
+        <span class="tip-folder-icon">📁</span>
+        <span class="tip-folder-name">clinica-saude-total/</span>
+        <span class="tip-folder-desc">— cliente 2 (clínica médica)</span>
+      </div>
+      <div class="tip-folder-row">
+        <span class="tip-folder-icon">📁</span>
+        <span class="tip-folder-name">meu-negocio/</span>
+        <span class="tip-folder-desc">— a pasta que você acabou de criar</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PASSO 3 -->
   <div class="step">
     <div class="step-header">
-      <div class="step-number">2</div>
+      <div class="step-number">3</div>
       <div class="step-title">Baixe e instale o MaxClaudePro</div>
     </div>
     <div class="step-body">
@@ -774,10 +880,10 @@
     </div>
   </div>
 
-  <!-- PASSO 3 -->
+  <!-- PASSO 4 -->
   <div class="step">
     <div class="step-header">
-      <div class="step-number">3</div>
+      <div class="step-number">4</div>
       <div class="step-title">Responda o /instalar</div>
     </div>
     <div class="step-body">
