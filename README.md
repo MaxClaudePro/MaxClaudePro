@@ -14,13 +14,12 @@ Não é um software. É um sistema de contexto + comandos prontos que qualquer e
 
 ## Como instalar
 
-1. Clone ou baixe este repositório
-2. Abra a pasta no VS Code
-3. Instale o Claude Code (se ainda não tiver): [claude.ai/code](https://claude.ai/code)
-4. Abra o Claude Code dentro da pasta e rode:
+1. Instale uma IDE com suporte ao Claude Code (VS Code, Cursor ou Antigravity IDE)
+2. Instale o Claude Code na IDE: [claude.ai/code](https://claude.ai/code)
+3. Cole o comando abaixo no chat do Claude Code:
 
 ```
-/instalar
+Clona o https://github.com/MaxClaudePro/MaxClaudePro.git na pasta atual, entra nela e roda o instalar.
 ```
 
 O setup dura cerca de 5-7 minutos e configura tudo automaticamente.
@@ -73,6 +72,6 @@ O setup dura cerca de 5-7 minutos e configura tudo automaticamente.
 
 ---
 
-## Desenvolvido por Vulcan
+## MaxClaudePro
 
-[vulcan.ia](https://instagram.com/vulcan.ia)
+[maxclaudepro.com.br](https://maxclaudepro.com.br)
