@@ -1,4 +1,4 @@
-# Vulcan — Sistema Operacional do Negócio
+# MaxClaudePro — Sistema Operacional do Negócio
 
 > Antes de responder qualquer coisa, ler os arquivos de memória abaixo.
 
